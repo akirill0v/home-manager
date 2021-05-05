@@ -232,7 +232,7 @@ let
         if versionAtLeast config.home.stateVersion "20.09" then
           pkgs.path
         else
-          <nixpkgs>);
+          pkgs.path);
       _module.args.pkgs = lib.mkDefault pkgs;
       _module.check = check;
       lib = lib.hm;
